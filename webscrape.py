@@ -22,10 +22,7 @@ def check_price():
     print(converted_price)
     print(title.strip())
 
-    if(converted_price < 1.000):
-        send_mail()
-
-
+    
 def send_mail():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
